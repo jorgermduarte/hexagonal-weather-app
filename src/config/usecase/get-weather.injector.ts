@@ -9,11 +9,11 @@ export const createGetWeatherUseCase = () => {
   let adapter: WeatherServiceOutputPort;
 
   switch (process.env.WEATHER_PROVIDER) {
-    case 'wttr':
-      adapter = new WttrInOutputAdapter();
+    case 'meta':
+      adapter = new MetaWeatherOutputAdapter();
       break;
     default:
-      adapter = new MetaWeatherOutputAdapter();
+      adapter = new WttrInOutputAdapter();
   }
 
   return new GetWeatherService(adapter);
