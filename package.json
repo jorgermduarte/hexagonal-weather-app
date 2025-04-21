@@ -1,0 +1,27 @@
+{
+  "name": "hexagonal-weather-app",
+  "version": "1.0.0",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "start": "ts-node src/main.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.5.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}

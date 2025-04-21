@@ -1,0 +1,15 @@
+### Obter previsão do tempo para Lisboa
+GET http://localhost:3000/api/weather?city=Lisbon
+Accept: application/json
+
+###
+
+### Obter previsão do tempo para Porto
+GET http://localhost:3000/api/weather?city=Porto
+Accept: application/json
+
+###
+
+### Testar sem passar cidade
+GET http://localhost:3000/api/weather
+Accept: application/json

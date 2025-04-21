@@ -1,0 +1,13 @@
+{
+  "extends": ["google"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "commonjs"
+  },
+  "rules": {
+    "require-jsdoc": "off",
+    "valid-jsdoc": "off"
+  }
+}
